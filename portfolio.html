@@ -1,0 +1,397 @@
+<!-- portfolio -->
+
+<html>
+
+<head>
+    <title>M1N9, Front-end dev, AI tools builder.</title>
+    <link rel="icon" href="m1n9.jpeg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(1, 34, 84);
+            margin-inline: 125px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .menu-txt {
+            display: flex;
+            gap: 15px;
+        }
+
+        .resume {
+            border-radius: 8px;
+            width: fit-content;
+            padding: 10px;
+            border: 2px solid;
+            border-color: aquamarine;
+            margin-bottom: 20px;
+        }
+
+        .resume:hover {
+            transform: scale(1.2);
+        }
+
+        .certi {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border: 2px solid;
+            border-color: aquamarine;
+            padding: 25px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        /* 
+
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    } */
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem auto;
+            width: 80%;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        /* 
+    .card .img-box {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    } */
+
+        .card .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card .img-box .card-text {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            transition: bottom 0.5s;
+            /* padding: 1rem; */
+        }
+
+        .card:hover .card-text {
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.577);
+
+        }
+
+        .card .img-box .card-text .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card .img-box .card-text .card-description {
+            font-size: 1rem;
+            text-align: center;
+            max-width: 80%;
+            margin-bottom: 1rem;
+        }
+
+        a,
+        p {
+            font-family: 'Inter', sans-serif;
+            /* color: rgb(182, 189, 196); */
+        }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            /* font-size: 48px; */
+        }
+
+        hr {
+            height: 2px;
+            background-color: aquamarine;
+            border: none;
+        }
+
+        .contact {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding-inline: 150px;
+        }
+
+        .contact .contact-icons {
+            padding-top: 50px;
+            padding-inline: 100px;
+            color: rgba(240, 255, 255, 0.664);
+            align-items: center;
+            justify-content: center;
+            /* text-decoration: none; */
+            font-size: 25px;
+        }
+
+        .contact .contact-icons a {
+            color: rgba(240, 255, 255, 0.664);
+            text-decoration: none;
+        }
+
+        .contact .contact-icons a:hover {
+            background-color: aquamarine;
+            bottom: -100%;
+            transition: bottom 0.5s;
+            color: black;
+        }
+
+        .logo {
+            border-radius: 50%;
+        }
+
+        /*  */
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#"> <img src="M1N9.jpeg" width="50px" height="50px" class="logo"> </a>
+        <div class="menu-txt">
+            <a href="#certi" style="color: aquamarine; font-size: 15px; text-decoration: none;">01. <span
+                    style="color: #e2e8f0;"> Certificates and Acheivememts </span></a>
+            <a href="#pro" style="color: aquamarine; font-size: 15px; text-decoration: none;">02. <span
+                    style="color: #e2e8f0;"> Projets </span></a>
+            <a href="#contact" style="color: aquamarine; font-size: 15px; text-decoration: none;">03.<span
+                    style="color: #e2e8f0;"> Contact me </span></a></a>
+        </div>
+    </div>
+    <p style="color: aquamarine; font-size: 15px;">Hi, my name is</p>
+    <h1 style="color: #e2e8f0;">Manikanta Kakarla.</h1>
+    <h1 style="color: rgba(240, 255, 255, 0.664);">I build things for the Web and AI.</h1>
+    <p style="color: rgb(182, 189, 196); font-size: 15px;">I am an upcoming engineering graduate who is specialized in
+        web dev, data science,
+        Machine Learning and AI.<br> Currently I'm focused on <span style="color: aquamarine;"> building </span>
+        interactive <span style="color: aquamarine;"> web applications </span> and <span style="color: aquamarine;">AI
+            tools</span>.</p>
+    <div class="resume"><a
+            href="https://docs.google.com/document/d/1aJz0C1Tm1wm4XN8RtBzsZtqCpwwMAJW-/edit?usp=sharing&ouid=110596239269417997477&rtpof=true&sd=true"
+            target="_blank" style="color: aquamarine; text-decoration: none; font-size: 15px; padding: 50px;">Resume</a>
+    </div>
+
+
+    <h1 style="color: #e2e8f0;" id="certi">Certificates and Acheivememts</h1>
+    <div id="cer-container">
+        <div class="certi">
+            <img src="Oasis.png" width="300px" height="200px">
+            <p style="color: rgb(182, 189, 196);">🎓 Completed Data Science Internship at Oasis InfoByte<br>
+                🏆 Recognized for outstanding performance and contributions<br>
+                I am delighted to present my certificate of completion for the Data Science Internship at Oasis
+                InfoByte. This certificate acknowledges my successful participation and contributions to the field of
+                data science during the internship period.
+
+        </div>
+        <div class="certi">
+            <p style="color: rgb(182, 189, 196);">🚀 Data Science Intern at Coincent<br>
+                🌐 Excelled in applying advanced analytics and machine learning<br>
+                This certificate not only represents the successful completion of my internship but also signifies the
+                knowledge gained and the practical experience acquired in the ever-evolving field of data science. I am
+                grateful for the mentorship and guidance provided by the team at Coincent, and I am excited to leverage
+                these skills in my future endeavors in the data science domain.</p>
+            <img src="coincent.png" width="300px" height="200px">
+        </div>
+        <div class="certi">
+            <img src="nptel.png" width="300px" height="200px">
+            <p style="color: rgb(182, 189, 196);">I am pleased to share my accomplishment in completing the Deep
+                Learning course
+                offered by the prestigious Indian Institute of Technology, Ropar, through the National Programme on
+                Technology Enhanced Learning (NPTEL).<br>
+                Receiving an elite score of 65% demonstrates my commitment to mastering the complexities of deep
+                learning and my dedication to continuous learning. This course has been instrumental in honing my skills
+                and expanding my knowledge in the rapidly evolving field of artificial intelligence.
+            </p>
+        </div>
+        <div class="certi">
+            <p style="color: rgb(182, 189, 196);">I am thrilled to share the recognition received for the innovative
+                webpage
+                (Budget Buyers) I created, which secured the 2nd prize at our college's Project Expo.<br>
+                I express my gratitude to the expo organizers and the judging panel for recognizing the efforts put into
+                creating an engaging and effective webpage. This award serves as a testament to the dedication and
+                passion I bring to every project.
+            </p>
+            <img src="budget.jpeg" width="300px" height="200px">
+        </div>
+    </div>
+
+
+    <h1 style="color: #e2e8f0;" id="pro">Projects</h1>
+    <!--  -->
+    <div class="card-container">
+        <div class="cards">
+            <a href="https://them1n9.github.io/cinelens/" target="_blank">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="cinelens1.jpg" alt="Card Image">
+                        <div class="card-text">
+                            <h2 class="card-title">CineLens</h2>
+                            <p class="card-description">A webpage to stream movies online for free of cost 🤑</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="http://bit.ly/budgetbuyers" target="_blank">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="budget-logo.jpeg" alt="Card Image">
+                        <div class="card-text">
+                            <h2 class="card-title">Budget Buyers</h2>
+                            <p class="card-description">No code shopping webpage for students to buy and sell their
+                                stuff in seconds.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://them1n9.github.io/grupee/" target="_blank">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="grupee.jpeg" alt="Card Image">
+                        <div class="card-text">
+                            <h2 class="card-title">Gruppe</h2>
+                            <p class="card-description">A github alternative with some extra features(Front-end)</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://colab.research.google.com/drive/1hiVDdUvcnuzkp-BcFN1TeOUpWed58MlZ?usp=sharing"
+                target="_blank">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="codebot.jpg" alt="Card Image">
+                        <div class="card-text">
+                            <h2 class="card-title">Llama chat bot</h2>
+                            <p class="card-description">A fine tuned chatbot made using meta's Llama-2</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://colab.research.google.com/drive/1HX1osra4TLDb-KSCuQAg3Ygm4uMc46_d?usp=sharing"
+                target="_blank">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="chatbot.jpg" alt="Card Image">
+                        <div class="card-text">
+                            <h2 class="card-title">Gemini chatbot</h2>
+                            <p class="card-description">A chatbot with faster speed and accuracy made using google's
+                                gemini API.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/them1n9" target="_blank">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="jarvis.jpg" alt="Card Image">
+                        <div class="card-text">
+                            <h2 class="card-title">Jarvis</h2>
+                            <p class="card-description">An upcoming AI project which automatically controls the our pc
+                                and laptops.<br>Loading.......</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <hr style="background-color: aquamarine;">
+    <div class="contact" id="contact">
+        <div class="contact-text">
+            <h1 style="color: #e2e8f0;">NEED AN INTERN WEB<br> DEV ? LET'S BUILD<br> SOMETHING.</h1>
+            <div class="resume"><a href=tel:"+17328021552"
+                    style="color: aquamarine; text-decoration: none; font-size: 15px; border-radius: 0%; padding-inline: 75px;">GET
+                    IN TOUCH</a></div>
+
+        </div>
+        <div class="contact-icons">
+            + <a href="https://github.com/them1n9" target="_blank">GITHUB</a><br>
+            + <a href="https://www.instagram.com/m1n9.exe/" target="_blank">INSTAGRAM</a><br>
+            + <a href="https://www.linkedin.com/in/manikanta-kakarla/" target="_blank">LINKEDIN</a>
+        </div>
+    </div>
+
+</body>
+<footer style="color: rgb(182, 189, 196); text-align: center; font-size: 17px;">made with passion and love 🤍 - <span
+        style="color: aquamarine;">M1N9</span></footer>
+
+</html>
