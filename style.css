@@ -1,0 +1,238 @@
+html{scroll-behavior:smooth}
+
+body {
+    background-color: rgb(1, 34, 84);
+    margin-inline: 125px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.menu-txt {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.resume {
+    border-radius: 8px;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid;
+    border-color: aquamarine;
+    margin-bottom: 20px;
+}
+
+.resume:hover {
+    transform: scale(1.2);
+}
+
+.resume a {
+    padding: 50px;
+    color: aquamarine;
+}
+
+.certi {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: aquamarine;
+    padding: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#pro{
+    margin-bottom: 0%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* 
+
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    } */
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: aquamarine;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* 
+    .card .img-box {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    } */
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .img-box .card-text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: bottom 0.5s;
+    /* padding: 1rem; */
+}
+
+.card:hover .card-text {
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.577);
+
+}
+
+.card .img-box .card-text .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .img-box .card-text .card-description {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 80%;
+    margin-bottom: 1rem;
+}
+
+.card-text-m{
+    visibility: hidden;
+}
+
+a,
+p {
+    font-family: 'Inter', sans-serif;
+    /* color: rgb(182, 189, 196); */
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    /* font-size: 48px; */
+}
+
+hr {
+    height: 2px;
+    background-color: aquamarine;
+    border: none;
+}
+
+.contact {
+    /* margin-top: 100px; */
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 150px;
+}
+
+.contact .contact-icons {
+    display: flex;  
+    flex-direction: column;
+    /* padding-top: 50px; */
+    padding-inline: 100px;
+    color: rgba(240, 255, 255, 0.664);
+     /* align-items: center; */
+   justify-content: center; 
+    /* text-decoration: none; */
+    font-size: 25px;
+    /* gap: 20px; */
+}
+
+.contact .contact-icons a {
+    color: rgba(240, 255, 255, 0.664);
+    text-decoration: none;
+}
+
+.contact .contact-icons a:hover {
+    background-color: aquamarine;
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.resume1 {
+    border-radius: 8px;
+    width: fit-content;
+    padding-block: 10px;
+    border: 2px solid;
+    border-color: aquamarine;
+    margin-bottom: 20px;
+    padding-inline: 75px;
+}
+
+.resume1:hover {
+    transform: scale(1.2);
+}
