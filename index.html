@@ -11,134 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
     <link rel="stylesheet" href="style.css">
-    <style>
-        @media (max-width: 480px) {
-            body {
-                margin-inline: 20px;
-            }
 
-            .menu-txt {
-                font-size: 10px;
-            }
-
-            .certi {
-                flex-direction: column;
-            }
-
-            #certi {
-                flex-direction: column-reverse;
-            }
-
-            .contact .contact-icons {
-                padding-inline: 0px;
-                font-size: 23px;
-            }
-
-            #contact .contact-icons {
-                padding-inline: 0px;
-            }
-
-            .contact {
-                padding: 0px;
-                margin-top: 0%;
-            }
-
-            .resume1 {
-                padding-inline: 20px;
-            }
-
-            .contact-text {
-                font-size: large;
-            }
-
-            .cards {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            /* .card {
-                width: 150px;
-                height: 100px;
-            } */
-
-            .card {
-                width: auto;
-                height: auto;
-            }
-
-            .card-text {
-                visibility: hidden;
-            }
-
-            .card-text-m {
-                visibility: visible;
-                text-decoration: none;
-                text-align: center;
-                color: #e2e8f0;
-            }
-
-            .cards a {
-                border: 2px solid aquamarine;
-                padding: 5px;
-                padding-bottom: 20px;
-                border-radius: 8px;
-            }
-        }
-        @media (max-width:780px) {
-            body {
-                margin-inline: 20px;
-            }
-            .cards{
-                width: auto;
-            }
-            .resume1{
-                padding-inline: 35px;
-            }
-            .card-text-m{
-                visibility: visible;
-                text-decoration: none;
-                text-align: center;
-                color: #e2e8f0;
-            }
-            .contact{
-                padding: 0%;
-            }
-            #contact .contact-icons {
-                padding-inline: 0px;
-            }
-            .contact-text{
-                padding: 0%;
-            }
-        }
-
-        @media (max-width:1240px) {
-            body {
-                margin-inline: 20px;
-            }
-            .cards{
-                width: auto;
-            }
-            .resume1{
-                padding-inline: 35px;
-            }
-            .card-text-m{
-                visibility: visible;
-                text-decoration: none;
-                text-align: center;
-                color: #e2e8f0;
-            }
-            .contact{
-                padding: 0%;
-            }
-            #contact .contact-icons {
-                padding-inline: 0px;
-            }
-            .contact-text{
-                padding: 0%;
-            }
-        }
-  
-    </style>
 </head>
 
 <body>
@@ -161,8 +34,7 @@
         Machine Learning and AI.<br> Currently I'm focused on <span style="color: aquamarine;"> building </span>
         interactive <span style="color: aquamarine;"> web applications </span> and <span style="color: aquamarine;">AI
             tools</span>.</p>
-    <div class="resume"><a
-            href="https://docs.google.com/document/d/1aJz0C1Tm1wm4XN8RtBzsZtqCpwwMAJW-/edit?usp=sharing&ouid=110596239269417997477&rtpof=true&sd=true"
+    <div class="resume"><a href="https://drive.google.com/file/d/131hFFeeInr_vqT7ewGOzUagTrQjD947p/view?usp=sharing"
             target="_blank" style=" text-decoration: none; font-size: 15px; ">Resume</a>
     </div>
 
@@ -170,16 +42,23 @@
     <h1 style="color: #e2e8f0;" id="certi">Certificates and Acheivememts</h1>
     <div id="cer-container">
         <div class="certi" id="certi">
-            <a href="images/Oasis.png" target="_blank" rel="noopener noreferrer"><img src="images/Oasis.png" width="300px" height="200px"></a>
-            
+            <!-- <a href="images/Oasis.png" target="_blank" rel="noopener noreferrer"><img src="images/Oasis.png" width="300px" height="200px"></a> -->
+            <img class="myImg" src="images/Oasis.png" alt="Oasis InfoByte Internship"
+                style="width:100%;max-width:300px">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+                <div class="caption"></div>
+            </div>
             <p style="color: rgb(182, 189, 196);">🎓 Completed Data Science Internship at Oasis InfoByte<br>
                 🏆 Recognized for outstanding performance and contributions<br>
                 I am delighted to present my certificate of <span style="color: aquamarine;">completion</span> for the
                 <span style="color: aquamarine;">Data Science Internship</span> at Oasis
                 InfoByte. This certificate acknowledges my successful participation and contributions to the field of
                 data science during the internship period.
-
+            </p>
         </div>
+
         <div class="certi">
             <p style="color: rgb(182, 189, 196);">🚀 Data Science Intern at Coincent<br>
                 🌐 Excelled in applying advanced analytics and machine learning<br>
@@ -188,12 +67,26 @@
                 knowledge gained and the practical experience acquired in the ever-evolving field of data science. I am
                 grateful for the mentorship and guidance provided by the team at Coincent, and I am excited to leverage
                 these skills in my future endeavors in the data science domain.</p>
-                <a href="images/coincent.png" target="_blank" rel="noopener noreferrer"><img src="images/coincent.png" width="300px" height="200px"></a>
-            
+            <img class="myImg" src="images/coincent.png" alt="Snow" style="width:100%;max-width:300px">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+                <div class="caption"></div>
+            </div>
+            <!-- <a href="images/coincent.png" target="_blank" rel="noopener noreferrer"><img src="images/coincent.png" width="300px" height="200px"></a> -->
+
         </div>
+
+
         <div class="certi" id="certi">
-            <a href="images/nptel.png" target="_blank" rel="noopener noreferrer"><img src="images/nptel.png" width="300px" height="200px"></a>
-            
+            <!-- <a href="images/nptel.png" target="_blank" rel="noopener noreferrer"><img src="images/nptel.png" width="300px" height="200px"></a> -->
+            <img class="myImg" src="images/nptel.png" alt="NPTEL" style="width:100%;max-width:300px">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+                <div class="caption"></div>
+            </div>
+
             <p style="color: rgb(182, 189, 196);">I am pleased to share my accomplishment in completing the <span
                     style="color: aquamarine;">Deep
                     Learning</span> course
@@ -205,6 +98,7 @@
                 and expanding my knowledge in the rapidly evolving field of artificial intelligence.
             </p>
         </div>
+
         <div class="certi">
             <p style="color: rgb(182, 189, 196);">I am thrilled to share the recognition received for the innovative
                 webpage
@@ -214,9 +108,14 @@
                 creating an engaging and effective webpage. This award serves as a testament to the dedication and
                 passion I bring to every project.
             </p>
-            <a href="images/budget.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/budget.jpeg"
-                    width="300px" height="200px"></a>
-
+            <img class="myImg" src="images/budget.jpeg" alt="Budget Buyers" style="width:100%;max-width:300px">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+                <div class="caption"></div>
+            </div>
+            <!-- <a href="images/budget.jpeg" target="_blank" rel="noopener noreferrer"><img src="images/budget.jpeg"
+                    width="300px" height="200px"></a> -->
         </div>
     </div>
 
@@ -344,5 +243,32 @@
 </body>
 <footer style="color: rgb(182, 189, 196); text-align: center; font-size: 17px;">made with passion and love 🤍 - <span
         style="color: aquamarine;">M1N9</span></footer>
+
+<script>
+    // Get all the modal elements
+    var modals = document.querySelectorAll(".modal");
+
+    // Get all the images and associate them with their respective modals
+    var images = document.querySelectorAll(".myImg");
+    images.forEach(function (img, index) {
+        var modal = modals[index];
+        var modalImg = modal.querySelector(".modal-content");
+        var captionText = modal.querySelector(".caption");
+
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = modal.querySelector(".close");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    });
+</script>
 
 </html>
